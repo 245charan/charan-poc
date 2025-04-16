@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charan - POC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSS - POC</h1>
+    </header>
+
+    <main>
+        <section id="display-content">
+            <h2>1. Display: Content</h2>
+            <div class="demo-container">
+                <div class="parent-container">
+                    <div class="normal-child">Normal Child (display: block)</div>
+                    <div class="content-child">Content Child (display: contents)</div>
+                </div>
+                <div class="controls">
+                    <button id="display-toggle">Toggle display: contents</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="will-change">
+            <h2>2. Will-Change Property</h2>
+            <div class="demo-container">
+                <div class="animation-box without-will-change">Without will-change</div>
+                <div class="animation-box with-will-change">With will-change</div>
+                <div class="controls">
+                    <button id="animation-toggle">Start Animation</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="transform">
+            <h2>3. Transform</h2>
+            <div class="demo-container">
+                <div class="box original">Original</div>
+                <div class="box translate">Translate</div>
+                <div class="box rotate">Rotate</div>
+                <div class="box scale">Scale</div>
+                <div class="box skew">Skew</div>
+                <div class="box combined">Combined</div>
+            </div>
+            <div class="controls">
+                <button id="transform-toggle">Toggle Transforms</button>
+            </div>
+        </section>
+
+        <section id="selector-specificity">
+            <h2>4. CSS Selector Specificity</h2>
+            <div class="demo-container">
+                <div id="id-selector">
+                    <p class="highlight">CaseGuard</p>
+                </div>
+                <div class="specificity-controls">
+                    <button data-selector="p">p</button>
+                    <button data-selector=".highlight">class</button>
+                    <button data-selector="#id-selector">id</button>
+                    <button data-selector="#id-selector p">id p</button>
+                    <button data-selector="p-important">!important</button>
+                    <button data-selector="reset">Reset</button>
+                </div>
+                <div class="specificity-info">
+                    <h3>Current Applied Styles:</h3>
+                    <pre id="current-styles">No styles applied yet</pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="masonry-layout">
+            <h2>5. Masonry Layout</h2>
+            <div class="masonry-container">
+                <div class="masonry-item" style="height: 150px;">Item 1</div>
+                <div class="masonry-item" style="height: 200px;">Item 2</div>
+                <div class="masonry-item" style="height: 120px;">Item 3</div>
+                <div class="masonry-item" style="height: 180px;">Item 4</div>
+                <div class="masonry-item" style="height: 250px;">Item 5</div>
+                <div class="masonry-item" style="height: 160px;">Item 6</div>
+                <div class="masonry-item" style="height: 210px;">Item 7</div>
+                <div class="masonry-item" style="height: 140px;">Item 8</div>
+            </div>
+            <div class="controls">
+                <button id="masonry-toggle">Toggle Masonry Layout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Charan - POC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
